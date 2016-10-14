@@ -1,0 +1,125 @@
+html {
+    font-family: "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1","Hiragino Sans GB","华文细黑","arial","sans-serif";
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    min-width: 1000px;
+}
+.wrap {
+    width: 100%;
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.wrap-main {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+.pos {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.f-l {
+    float: left;
+}
+.f-r {
+    float: right;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.active-color {
+    color: #FFD906!important;
+}
+.clear:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.header {
+    height: 674px;
+    background-image: url("../img/banner.jpg");
+}
+.works-show {
+    height: 536px;
+    background-image: url("../img/bg1.jpg");
+}
+.works-way {
+    height: 523px;
+    background-image: url("../img/bg2.jpg");
+}
+.dub-lists{
+    height: 813px;
+    background-image: url("../img/bg3.jpg");
+}
+.prize {
+    height: 840px;
+    background-image: url("../img/bg4.jpg");
+}
+.active-rule {
+    height: 376px;
+    background-image: url("../img/bg5.jpg");
+}
+
+/*header*/
+.header-top-bg {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(50, 120, 190, .8);
+}
+.header-top a {
+    float: left;
+    display: block;
+    font-size: 24px;
+    color: #dbf2ff;
+}
+.header-top .first {
+    padding-right: 54px;
+    border-right: 1px dashed #dbf2ff;
+}
+.header-top  .last {
+    padding-left: 54px;
+}
+.header-top .link {
+    top: 23px;
+    left: auto;
+    right: 34px;
+}
+
+.logo,
+.logo2{
+    position: absolute;
+    top: 13px;
+}
+.logo {
+    left: 124px;
+}
+.logo2 {
+    left: 2px;
+}
+.header-content {
+    position: relative;
+    height: 74px;
+}
+
+.active-time {
+    position: absolute;
+    left: 364px;
+    top: 415px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #532700;
+}
+.active-time strong {
+    font-weight: bold;
+}
+
+.works-show-content{
+    height: 100%;
+    background: url("../img/works-show-bg.png") 0 40px no-repeat;
+}
