@@ -6,6 +6,8 @@ html {
 }
 body {
     min-width: 1000px;
+    font-size: 14px;
+    color: #fff;
 }
 .wrap {
     width: 100%;
@@ -33,9 +35,21 @@ img {
     display: block;
     max-width: 100%;
 }
+.show-lists .voice .button-play,
+.show-lists .voice button,
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+}
+input,
+button {
+    border: none;
+    background-color: transparent;
+}
 .active-color {
     color: #FFD906!important;
 }
+.dub-lists-content li:after,
 .clear:after {
     display: block;
     content: "";
@@ -106,7 +120,6 @@ img {
     position: relative;
     height: 74px;
 }
-
 .active-time {
     position: absolute;
     left: 364px;
@@ -115,11 +128,294 @@ img {
     font-size: 18px;
     color: #532700;
 }
+.dub-lists-content li strong,
 .active-time strong {
     font-weight: bold;
 }
-
-.works-show-content{
+.active-rule-content,
+.prize-content,
+.dub-lists-content,
+.works-way-content,
+.works-show-content {
     height: 100%;
-    background: url("../img/works-show-bg.png") 0 40px no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.works-show-content {
+    background-position: 0 40px;
+    background-image: url("../img/works-show-bg.png");
+}
+.works-way-content {
+    background-image: url("../img/works-way-bg.png");
+}
+.dub-lists-content {
+    background-image: url("../img/dub-lists-bg.png");
+}
+.prize-content {
+    background-image: url("../img/prize-bg.png");
+}
+.active-rule-content {
+    background-position: center 0;
+    background-image: url("../img/active-rule-bg.png");
+}
+.show-lists {
+    top: 95px;
+    left: 0;
+    width: 100%;
+    height: 332px;
+}
+.show-lists ul {
+    margin-right: -19px;
+    height: 335px;
+}
+.show-lists li {
+    float: left;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-right: 19px;
+    height: 335px;
+}
+.show-lists li img {
+
+}
+.show-lists li .voice {
+    padding-top: 11px;
+    padding-bottom: 18px;
+    display: block;
+    width: 124px;
+    height: 40px;
+}
+.show-lists .voice button {
+    cursor: pointer;
+    display: block;
+    margin: 11px auto 0 58px;
+    width: 15px;
+    height: 18px;
+    background-position: -1px -1px;
+}
+.show-lists .voice .button-play {
+    background-position: -17px -1px;
+}
+.show-lists .voice audio {
+    display: none;
+    width: 100%;
+    opacity: 0;
+}
+.show-lists .work-info {
+    width: 116px;
+    padding: 4px 4px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #d9fdff;
+}
+.show-lists .work-info .text {
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+.show-lists .text em {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+}
+.show-lists .text span {
+    color: #fff;
+}
+.show-lists .text span:after {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: inline-block;
+    content: "...";
+}
+.show-lists .paging {
+    padding: 33px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.show-lists .paging a {
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #325CAB;
+}
+.show-lists .paging > a {
+    margin-left: 18px;
+    margin-right: 18px;
+    padding: 8px 10px;
+    border: 1px solid #325CAB;
+}
+.show-lists .paging > .active,
+.show-lists .pagination .active {
+    color: #FF821C;
+}
+.show-lists .paging > .active {
+    border-color: #FF821C;
+}
+.show-lists .pagination .active {
+    text-decoration: underline;
+}
+
+.way-info{
+    padding-top: 107px;
+    padding-left: 35px;
+    width: 285px;
+    height: 380px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #325cab;
+}
+.way-info strong {
+    font-weight: bold;
+    font-size: 18px;
+}
+.way-info h3 {
+    padding-bottom: 6px;
+    color: #3389e7;
+}
+.way-info h4 strong {
+    font-size: 14px;
+}
+.way-info .email {
+    color: #f60000;
+    text-decoration: underline;
+}
+
+.way-info .format {
+    padding: 19px 0;
+}
+.dub-lists-content {
+    font-size: 12px;
+    line-height: 20px;
+    color: #517cbb;
+}
+.dub-lists-content li {
+    position: relative;
+    padding-left: 58px;
+    height: 42px;
+    margin-bottom: 11px;
+}
+.dub-lists-content .first {
+    position: absolute;
+    left: 58px;
+    top: -8px;
+    margin-top: 0;
+}
+.dub-lists-content li p {
+    position: relative;
+    float: left;
+    margin-top: 4px;
+    padding: 7px 10px;
+    border: 1px solid #517cbb;
+    border-radius: 8px;
+}
+.dub-lists-content li p:after, .dub-lists-content li p:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.dub-lists-content li p:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-right-color: #E9EEF1;
+    border-width: 6px;
+    margin-top: -6px;
+}
+.dub-lists-content li p:before {
+    border-color: rgba(81, 124, 187, 0);
+    border-right-color: #517cbb;
+    border-width: 7px;
+    margin-top: -7px;
+}
+.dub-lists-main {
+    padding-top: 93px;
+}
+.right-lists,
+.left-lists {
+    width: 500px;
+}
+.right-lists li p:after {
+    border-right-color: #F7F8F2;
+}
+
+.prize-content {
+    padding-top: 65px;
+}
+.prize-content .explain {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    color: #325cab;
+}
+.prize-content .explain span {
+    color: #ea6900;
+}
+.prize-title {
+    padding-left: 88px;
+    height: 75px;
+    line-height: 75px;
+    color: #325cab;
+}
+.prize-title2 .big,
+.prize-title .column .big {
+    font-weight: bold;
+    font-size: 24px;
+}
+.prize-title .column .small {
+    font-size: 14px;
+    padding-left: 31px;
+    padding-right: 68px;
+}
+.prize-text {
+    padding-top: 287px;
+    padding-left: 8px;
+}
+.prize-text > p {
+    width: 268px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+}
+.prize-text > .first {
+    width: 367px;
+    text-align: left;
+}
+.prize-text > .first span {
+    color: #a1e6ff;
+}
+.prize-text > .last {
+    padding-left: 50px;
+}
+.prize-title2 {
+    font-size: 14px;
+    padding-left: 262px;
+    padding-top: 32px;
+    height: 63px;
+    line-height: 53px;
+    color: #325cab;
+}
+.prize-title2 > .big {
+    padding-right: 30px;
+}
+.prize-text2 {
+    padding-left: 530px;
+    padding-top: 73px;
+}
+
+.active-rule-content {
+    padding-top: 92px;
+}
+
+.active-rule-content ul {
+    width: 500px;
+    color: #325cab;
+    line-height: 30px;
+}
+.active-rule-content .last {
+    width: 480px;
+    padding-left: 20px;
 }
