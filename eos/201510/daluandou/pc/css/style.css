@@ -54,6 +54,10 @@ button {
     display: block;
     content: "";
     clear: both;
+    zoom:1;
+}
+* html .clear{
+    zoom:1;
 }
 .header {
     height: 674px;
@@ -97,6 +101,7 @@ button {
 .header-top-bg {
     width: 100%;
     height: 70px;
+    background-color: #325cab;
     background-color: rgba(50, 120, 190, .8);
 }
 .header-top a {
@@ -224,6 +229,7 @@ button {
     display: none;
     width: 100%;
     opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
 }
 .show-lists .work-info {
     width: 116px;
@@ -318,12 +324,14 @@ button {
     font-size: 12px;
     line-height: 20px;
     color: #517cbb;
+    height: 813px;
 }
 .dub-lists-content li {
     position: relative;
     padding-left: 58px;
     height: 42px;
     margin-bottom: 11px;
+    *margin-bottom: 6px; /*IE7*/
 }
 .dub-lists-content .first {
     position: absolute;
@@ -473,7 +481,14 @@ button {
 }
 .jiathis_style_24x24 > a {
     opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
 }
 .jiathis_button_tsina {
     margin-left: 67px;
+}
+
+.prize-text,
+.dub-lists-main {
+    overflow: hidden;
+    height: auto;
 }
