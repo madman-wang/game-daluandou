@@ -79,6 +79,19 @@ button {
     height: 376px;
     background-image: url("../img/bg5.jpg");
 }
+.dub-lists-content li:hover p {
+    background-color: #FF821C;
+    color: #fff;
+    border-color: #FF821C;
+}
+.dub-lists-content .right-lists li:hover p:before,
+.dub-lists-content li:hover p:before {
+    border-right-color: #FF821C;
+}
+.dub-lists-content .right-lists li:hover p:after,
+.dub-lists-content li:hover p:after {
+    border-right-color: #FF821C;
+}
 
 /*header*/
 .header-top-bg {
@@ -175,8 +188,18 @@ button {
     margin-right: 19px;
     height: 335px;
 }
-.show-lists li img {
-
+.show-lists li .work-img-wrap {
+    position: relative;
+    width: 123px;
+    height: 152px;
+    text-align: center;
+    overflow: hidden;
+}
+.show-lists li .work-img-wrap img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
 }
 .show-lists li .voice {
     padding-top: 11px;
@@ -184,6 +207,7 @@ button {
     display: block;
     width: 124px;
     height: 40px;
+    cursor: pointer;
 }
 .show-lists .voice button {
     cursor: pointer;
@@ -255,9 +279,16 @@ button {
     text-decoration: underline;
 }
 
+.works-way-content .wx {
+    padding-left: 61px;
+    padding-top: 415px;
+    font-size: 18px;
+    color: #FAE80D;
+}
 .way-info{
     padding-top: 107px;
     padding-left: 35px;
+    padding-right: 58px;
     width: 285px;
     height: 380px;
     font-size: 14px;
@@ -329,6 +360,9 @@ button {
     border-right-color: #517cbb;
     border-width: 7px;
     margin-top: -7px;
+}
+.dub-lists-content .right-lists li p:after {
+    border-right-color: #F0F1F3;
 }
 .dub-lists-main {
     padding-top: 93px;
@@ -418,4 +452,28 @@ button {
 .active-rule-content .last {
     width: 480px;
     padding-left: 20px;
+}
+
+.right-share {
+    position: absolute;
+    right: 39px;
+    top: 70px;
+    padding-left: 18px;
+    padding-top: 5px;
+    width: 240px;
+    height: 30px;
+    line-height: 35px;
+    text-align: right;
+}
+.right-share > a {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+.jiathis_style_24x24 > a {
+    opacity: 0;
+}
+.jiathis_button_tsina {
+    margin-left: 67px;
 }
